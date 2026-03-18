@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">Student Dashboard</div>
+
+<div class="container">
+
+<div class="card">
+<h3>Submit Assignment</h3>
+
+<input id="title" placeholder="Assignment Title">
+
+<select id="subject">
+<option>Finance</option>
+<option>Marketing</option>
+<option>Operations</option>
+<option>Analytics</option>
+</select>
+
+<input type="file" id="file">
+
+<button onclick="submitAssignment()">Submit</button>
+
+<p id="countdown"></p>
+
+</div>
+
+<div class="card">
+<h3>My Assignments</h3>
+
+<button onclick="loadAssignments()">Refresh</button>
+
+<ul id="list"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
